@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Ian's Portfolio" content="My Portfolio."/>
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <title>Ian C</title>
+
+  </head>
+
+  <ul class="nav navbar-nav">
+    <li><a href="#header">top</a></li>
+    <li><a href="#about-scroll">about me</a></li>
+    <li><a href="#resume-scroll">what i do</a></li>
+    <li><a href="#tools-scroll">how i do it</a></li>
+    <li><a href="#projects-scroll">projects</a></li>
+  </ul>
+
+  <header id="header">
+    <div class="header-gradient">
+      <div id="header-top">
+        Hi, I'm Ian
+        <div id="header-sub">
+          <br>
+          A junior web-developer and designer from the southwest
+          <br>
+          with a drive and passion to learn and grow
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <body>
+
+    <div class="about">
+      <div id="about-scroll">
+        <div id="about-text">
+          about me
+        </div>
+        <div class="break">
+        </div>
+        <div class="wrapper">
+          <div class="box">I've been programming professionally on the web for over a year, from designing sites to assembling them, to hosting and setting up frameworks; there are few areas I haven't dabbled and enjoy the process of engaging and learning in this field
+            <br><br><br>
+            I also tend to enjoy the finer things in life. </div>
+          <div class="box"><img src="./assets/images/me.JPG" width="790" height="400"></img></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume">
+      <div id="resume-scroll">
+        <div id="resume-text">
+          what i do
+        </div>
+        <div class="break">
+        </div>
+        <div class="wrapper">
+          <div class="box-dark">With a combination of skills in customer service, data-entry, and full-stack development, as well as hosting multiple servers with varying function, I've found I can fit in just about anywhere. Front-end web design is what I feel the most comfortable with, but pushing boundaries and learning new tools and tricks is what I'm most interested in. </div>
+          <div class="box-dark">I have experience working in solo or with a team, have a knack for coordination and prioritize positive and efficient interactions. Along with developing, I've focused my attention on app design, image manipulation, and typography, emphasizing functionality and accessibility. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="between">
+      <br>
+    </div>
+
+    <div class="tools">
+      <div id="tools-scroll">
+        <div id="tools-text">
+          how i do it
+        </div>
+        <div class="break">
+        </div>
+        <div class="how-wrapper">
+          <div class="box">Front-End:</div>
+          <div class="box-langs"><img src="./assets/icons/html.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/css.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/js.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/bootstrap.svg"></img></div>
+        </div>
+        <hr>
+        <div class="how-wrapper">
+          <div class="box">Back-End:</div>
+          <div class="box-langs"><img src="./assets/icons/node.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/ruby.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/postsql.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/nginx.svg"></img></div>
+        </div>
+        <hr>
+        <div class="how-wrapper">
+          <div class="box">Tools/Services:</div>
+          <div class="box-langs"><img src="./assets/icons/git.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/vim.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/ubuntu.svg"></img></div>
+          <div class="box-langs"><img src="./assets/icons/vagrant.svg"></img></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div id="projects-scroll">
+        <div id="projects-text">
+          projects
+        </div>
+        <div class="break">
+        </div>
+        <div class="projects-wrapper">
+          <a href="https://ianc-dev.github.io/blog" class="projects-box"><img src="./assets/images/project1.jpg"></img></a>
+          <a href="https://inside-brataccas.com" class="projects-box"><img src="./assets/images/project2.jpg"></img></a>
+          <a href="https://github.com/ianc-dev/griptape-colorscheme.git" class="projects-box"><img src="./assets/images/project3.jpg"></img></a>
+          <div class="projects-box">My Blog</div>
+          <div class="projects-box">Inside Brataccas</div>
+          <div class="projects-box">My Dotfiles</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div id="footer-text">
+          please <a href="mailto: iancdev@fastmail.com">contact</a> for resume
+        </div>
+        <div id="footer-flavor">
+          and here's my <a href="https://github.com/ianc-dev">github</a>
+        </div>
+        <div id="footer-flavor-2">
+          thanks for stopping by
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+
+    const timeline = anime.timeline({
+      loop: false,
+    });
+
+    timeline.add({
+      targets: '#header-top',
+      opacity: [0, 1],
+      easing: "linear",
+      duration: 2000,
+    });
+
+    //  navbar onclick scroll function
+    $(function() {
+      $('ul.nav a').bind('click',function(event){
+        event.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top -93
+        }, 1000);
+        event.preventDefault();
+      });
+    });
+
+  </script>
+
+</html>
