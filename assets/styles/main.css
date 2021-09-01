@@ -8,7 +8,6 @@ header {
   background-image: url("../images/ocean.JPG");
   background-size: cover;
   height: 90vh;
-  width: 100%;
   font-family: 'Arimo', sans-serif;
   background-attachment: fixed;
 }
@@ -63,11 +62,6 @@ a:link {
   padding-right: 1em;
 }
 
-a:hover {
-  text-decoration: none;
-  color: grey;
-}
-
 a > li:active {
   list-style: none;
   text-decoration: none;
@@ -98,6 +92,83 @@ a > li:active {
   padding-left: 10px;
 }
 
+#about-text, #resume-text, #tools-text, #projects-text {
+  color: rgb(255, 255, 255, 0.8) !important;
+  font-size: 10em;
+  margin-left: 40px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, white, white);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 7px;
+  font-family: 'Bebas Neue', cursive;
+  width: 55%;
+  left: 0;
+}
+
+#about-text, #resume-text, #tools-text, #projects-text {
+  box-shadow: 0px 5px #162739;
+}
+
+#about-text, #tools-text {
+  margin-left: 20px;
+}
+
+#resume-text, #projects-text {
+  text-align: right;
+  margin-left: 44%;
+}
+
+.about {
+  background-size: cover;
+  height: 800px;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #162739 36.4%,  #000000 36.4%);
+}
+
+#about-inside {
+  font-size: 6em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.resume {
+  background-image: linear-gradient(180deg, #000000 36.4%,  #162739 36.4%);
+  background-size: cover;
+  height: 800px;
+  font-family: 'Arimo', sans-serif;
+}
+
+#resume-inside {
+  font-size: 6em;
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white !important;
+}
+
+.tools {
+  background-image: linear-gradient(180deg, #000000 36.4%, #162739  36.4%);
+  background-size: cover;
+  height: 98vh;
+  font-family: 'Arimo', sans-serif;
+  overflow: hidden;
+}
+
+#tools-inside {
+  font-size: 6em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.projects {
+  background-image: linear-gradient(180deg, #162739 36.4%, #000000  36.4%);
+  background-size: cover;
+  height: 82.7vh;
+  font-family: 'Arimo', sans-serif;
+}
+
+#projects-inside {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,53 +178,50 @@ a > li:active {
 
 .box {
   color: #b9b9b9;
-  border-radius: 20px;
   padding: 20px;
   font-size: 2.2em;
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.box-dark {
+.box-blue {
   color: white;
   border-radius: 20px;
   padding: 20px;
   font-size: 2.2em;
   margin-left: 40px;
   margin-right: 40px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.box > img, .box-dark > img, .projects-box > img {
+.box > img, .box-blue > img, .projects-box > img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
   margin-right: 20px;
   border-radius: 5px;
 }
 
-.how-wrapper {
+.tools-wrapper {
   display: grid;
   grid-template-columns: 18% 18% 18% 18% 18%;
   grid-gap: 40px;
   font-family: 'Rubik', sans-serif;
 }
 
-.how-wrapper > .box {
+.tools-wrapper > .box {
   margin-left: 40px;
   margin-right: 40px;
   padding-top: 25%;
+  color: white !important;
 }
 
 .box-langs {
   color: white;
-  border-radius: 20px;
   padding: 20px;
   font-size: 2.2em;
   margin-left: 40px;
   margin-right: 40px;
   width: 38%;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .projects-wrapper {
@@ -177,115 +245,6 @@ a > li:active {
   cursor: pointer;
 }
 
-.about {
-  background-size: cover;
-  height: 800px;
-  overflow: hidden;
-  background-image: linear-gradient(180deg, #162739 36.4%,  #000000 36.4%);
-}
-
-#about-text, #resume-text, #tools-text, #projects-text {
-  color: rgb(255, 255, 255, 0.8) !important;
-  font-size: 10em;
-  margin-left: 40px;
-  text-decoration: none;
-  background-image: linear-gradient(to right, white, white);
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  background-size: 100% 7px;
-  font-family: 'Bebas Neue', cursive;
-  width: 55%;
-  left: 0;
-}
-
-#about-text::after, #resume-text::after, #tools-text::after #projects-text::after; {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  background: none repeat scroll 0 0 transparent;
-  height: 2px;
-  width: 0;
-  background: rgb(255, 255, 255, 0.6);
-}
-
-#about-text, #tools-text {
-  margin-left: 20px;
-}
-
-#resume-text, #projects-text {
-  margin-left: 40px;
-}
-
-#resume-text, #projects-text {
-  text-align: right;
-  margin-left: 44%;
-}
-
-#about-text{
-  box-shadow: 0px 5px #162739;
-  color: rgb(255, 255, 255, 0.6) !important;
-}
-
-#about-inside {
-  font-size: 6em;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.resume {
-  background-image: linear-gradient(180deg, #000000 36.4%,  #162739 36.4%);
-  background-size: cover;
-  height: 800px;
-  z-index: 1;
-  font-family: 'Arimo', sans-serif;
-}
-
-#resume-text {
-  box-shadow: 0px 5px #162739;
-}
-
-#resume-inside {
-  font-size: 6em;
-  text-align: right;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white #important;
-}
-
-.tools {
-  background-image: linear-gradient(180deg, #000000 36.4%, #162739  36.4%);
-  background-size: cover;
-  height: 98vh;
-  z-index: -1;
-  font-family: 'Arimo', sans-serif;
-  overflow: hidden;
-}
-
-#tools-inside {
-  font-size: 6em;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-#tools-text {
-  box-shadow: 0px 5px #162739;
-}
-
-.projects {
-  background-image: linear-gradient(180deg, #162739 36.4%, #000000  36.4%);
-  background-size: cover;
-  height: 82.7vh;
-  z-index: -1;
-  font-family: 'Arimo', sans-serif;
-}
-
-#projects-text {
-  box-shadow: 0px 5px #162739;
-}
-
-#projects-inside {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 #footer-text, #footer-flavor, #footer-flavor-2 {
   color: rgb(255, 255, 255, 0.8) !important;
   font-size: 5em;
@@ -298,19 +257,6 @@ a > li:active {
   font-family: 'Bebas Neue', cursive;
   width: 65%;
   left: 0;
-}
-
-#footer-text::after, #footer-flavor::after, #footer-flavor-2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  background: none repeat scroll 0 0 transparent;
-  height: 2px;
-  width: 0;
-  background: rgb(255, 255, 255, 0.6);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 #footer-text {
@@ -345,9 +291,8 @@ footer {
   background-image: linear-gradient(90deg, #000000 46.4%, #162739  46.4%);
   height: 580px;
   font-family: 'Poly', serif;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
+
 /* MEDIA-QUERY WIDTH */
 
 @media screen and (max-width: 1560px) {
@@ -357,7 +302,7 @@ footer {
     margin-bottom: 30vh;
   }
 
-  .wrapper, .how-wrapper {
+  .wrapper, .tools-wrapper {
     font-size: 85%;
   }
 
@@ -385,12 +330,12 @@ footer {
     font-size: 75%;
   }
 
-  .how-wrapper {
+  .tools-wrapper {
     font-size: 75%;
     grid-template-columns: 17% 17% 17% 17% 17%;
   }
 
-  .how-wrapper > .box {
+  .tools-wrapper > .box {
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 25%;
@@ -454,23 +399,27 @@ footer {
     font-size: 1.25em;
   }
 
-  .wrapper, .how-wrapper {
+  .wrapper, .tools-wrapper {
     font-size: 65%;
   }
 }
 
 @media screen and (max-width: 900px) {
 
+  #header-sub {
+    font-size: 23%;
+  }
+
   .navbar-nav {
     font-size: 1.25em;
   }
 
-  .how-wrapper {
+  .tools-wrapper {
     font-size: 65%;
     grid-template-columns: 16% 16% 16% 16% 16%;
   }
 
-  .how-wrapper > .box {
+  .tools-wrapper > .box {
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 25%;
@@ -494,6 +443,10 @@ footer {
     height: 650px;
   }
 
+  #header-sub {
+    font-size: 20%;
+  }
+
   .about, .resume, .tools, .projects {
     background-image: none;
     background-color: black;
@@ -507,7 +460,7 @@ footer {
     display: hidden !important;
   }
 
-  .how-wrapper {
+  .tools-wrapper {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
@@ -516,7 +469,7 @@ footer {
     margin: 0;
   }
 
-  .how-wrapper > div:nth-child(1) {
+  .tools-wrapper > div:nth-child(1) {
     grid-column: span 4;
     margin-top: -80px;
   }
@@ -549,7 +502,7 @@ footer {
     margin-right: 40px;
   }
 
-  .box > img, .box-dark > img, .projects-box > img {
+  .box > img, .box-blue > img, .projects-box > img {
     width: 100%;
     max-height: 80%;
   }
@@ -634,8 +587,9 @@ footer {
 }
 
 @media  screen and (max-width: 560px) {
-  .navbar-nav {
-    font-size: 1em;
+
+  #header-sub {
+    font-size: 17%;
   }
 
   .box {
@@ -645,7 +599,7 @@ footer {
     margin-right: 40px;
   }
 
-  .box > img, .box-dark > img {
+  .box > img, .box-blue > img {
     width: 100%;
     max-height: 80%;
   }
@@ -661,22 +615,22 @@ footer {
     height: 150%;
   }
 
-  .how-wrapper > div:nth-child(2) {
+  .tools-wrapper > div:nth-child(2) {
     grid-column: span 2;
     padding-top: 15px;
   }
 
-  .how-wrapper > div:nth-child(3) {
+  .tools-wrapper > div:nth-child(3) {
     grid-column: span 2;
     padding-top: 15px;
   }
 
-  .how-wrapper > div:nth-child(4) {
+  .tools-wrapper > div:nth-child(4) {
     grid-column: span 2;
     padding-top: 15px;
   }
 
-  .how-wrapper > div:nth-child(5) {
+  .tools-wrapper > div:nth-child(5) {
     grid-column: span 2;
     padding-top: 15px;
   }
@@ -687,6 +641,10 @@ footer {
   }
 
 @media  screen and (max-width: 470px) {
+
+  .navbar-nav {
+    padding-bottom: 25px;
+  }
 
   #header-top {
     font-size: 8vh;
@@ -702,7 +660,7 @@ footer {
     grid-gap: 5px;
   }
 
-  .wrapper > .box, .wrapper > .box-dark {
+  .wrapper > .box, .wrapper > .box-blue {
     font-size: 1.9em;
   }
 
@@ -730,14 +688,14 @@ footer {
 
 @media  screen and (max-width: 380px) {
 
-  .wrapper > .box, .wrapper > .box-dark {
+  .wrapper > .box, .wrapper > .box-blue {
     font-size: 1.9em;
   }
 }
 
 @media  screen and (max-width: 360px) {
 
-  .wrapper > .box, .wrapper > .box-dark {
+  .wrapper > .box, .wrapper > .box-blue {
     font-size: 1.8em;
   }
 
@@ -748,20 +706,20 @@ footer {
 
 @media  screen and (max-width: 350px) {
 
-  .wrapper > .box, .wrapper > .box-dark {
+  .wrapper > .box, .wrapper > .box-blue {
     font-size: 1.7em;
   }
 
 @media  screen and (max-width: 320px) {
 
-      .wrapper > .box, .wrapper > .box-dark {
+      .wrapper > .box, .wrapper > .box-blue {
         font-size: 1.6em;
       }
     }
 
 @media  screen and (max-width: 280px) {
 
-    .wrapper > .box, .wrapper > .box-dark {
+    .wrapper > .box, .wrapper > .box-blue {
       font-size: 1.5em;
     }
 
@@ -788,7 +746,7 @@ footer {
     padding: -1100px;
   }
 
-  .box-dark {
+  .box-blue {
     color: white;
     border-radius: 20px;
     padding: 20px;
